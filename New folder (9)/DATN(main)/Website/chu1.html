@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layout 1</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+	<body>
+	<div id="menu_top">
+		<ul>
+			<li><a href="#menu_top" title="Trang Chủ" class="active">Trang Chủ</a></li>
+			<li><a href="#banner" title="Giới Thiệu">Giới Thiệu</a></li>
+			<li><a href="#after" title="Thông Số">Thông Số</a></li>
+			<li><a href="#below" title="Điều Khiển">Điều Khiển</a></li>
+			<li><a href="#footer" title="Liên Hệ">Liên Hệ</a></li>
+		</ul>
+	</div>
+	<div id="banner">
+		<div id="datn1"><img src="banner4.jpg"class="can1"/></div>
+		<div id="datn"><b><p><big>Đồ Án Tốt Nghiệp<br>Đề Tài: Thiết kế và thi công hệ thống chăm sóc và giám sát nhà trồng nấm</big><small><br>SVTH: Nguyễn Lâm Tiến Sơn 15DT1<br>Người HD1: TS. Huỳnh Thanh Tùng<br>Người HD2: KS. Vũ Vân Thanh</small></p></b></div>
+		<div id="datn2"><img src="banner2.jpg"class="can2"/></div>
+		
+	</div>
+	<div id="date"></div>
+	<div id="main">
+		<div id="after">
+			<div id="so1"><i class="fa fa-thermometer-three-quarters" aria-hidden="true">&nbsp;</i><br><h8><b>°C</b></h8><h6><center><span id="nhietdo2"></span></center></h6></div>
+			<div id="so2"><i class="fa fa-tint" aria-hidden="true">&nbsp;</i><br><h8><b>%</b></h8><h6><center><span id="doam2"></span></center></h6></div>
+			<div id="so3"><i class="fa fa-tree" aria-hidden="true">&nbsp;</i><br><h8><b>%</b></h8><h6><center><span id="doamdat2"></center></span></h6></div>
+			<div id="so9"><i class="fa fa-sun-o" aria-hidden="true">&nbsp;</i><br><h8><b>lux</b></h8><h6><center><span id="anhsang2"></span></center></h6></div>
+			<div id="so4"><i class="fa fa-random" aria-hidden="true">&nbsp;</i><br><h8><b>ppm</b></h8><h6><center><span id="air2"></span></center></h6></div>
+			<div id="so11"></div>
+			<div id="so11"></div>
+			<div id="so11"></div>
+		</div>
+		<div id="below">
+			<div id="so5"><i class="fa fa-shower" aria-hidden="true"></i>&nbsp;
+							<div class="button1">
+								<input id="nut1" type="checkbox" name=""></div>
+							</div>
+			<div id="so7"><i class="fa fa-superpowers" aria-hidden="true">&nbsp;</i>
+							<div class="button3">
+								<input id="nut3" type="checkbox" name=""></div>
+							</div>
+			<div id="so6"><i class="fa fa-lightbulb-o" aria-hidden="true">&nbsp;</i>
+							<div class="button2">
+								<input id="nut2" type="checkbox" name=""></div>
+							</div>				
+			<div id="so10"><i class="fa fa-map" aria-hidden="true">&nbsp;</i>
+							<div class="button5">
+								<input id="nut5" type="checkbox" name=""></div>
+							</div>
+			<div id="so15"><b>AUTO1&nbsp;
+							<div class="button4">
+								<input id="nut4" type="checkbox" name=""></div>
+							</div>											
+			<div id="so8"><b>AUTO2&nbsp;
+							<div class="button6">
+								<input id="nut6" type="checkbox" name=""></div>
+							</div>			
+			<div id="so12"></div>	
+			<div id="so12"></div>																			
+		</div>
+	</div>
+	<div id="footer">Nguyễn Lâm Tiến Sơn 15DT1 SDT:0961112977 <br>Email:nltson1997@gmail.com Facebook:https://www.facebook.com/nguyenlam.tienson</div>
+	<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+		<script>
+  	// Your web app's Firebase configuration
+  	var firebaseConfig = {
+    apiKey: "AIzaSyAqqqwjuf70mFWpRnhyhm4qS8OGMjCqK-I",
+    authDomain: "sonhademo.firebaseapp.com",
+    databaseURL: "https://sonhademo.firebaseio.com",
+    projectId: "sonhademo",
+    storageBucket: "sonhademo.appspot.com",
+    messagingSenderId: "856386015301",
+    appId: "1:856386015301:web:4046512a9151f312d2932c",
+    measurementId: "G-E08R1G31Z5"
+  	};
+  	// Initialize Firebase
+  	firebase.initializeApp(firebaseConfig);
+  	firebase.analytics();
+  		</script>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="javascript.js" ></script>
+	</script>
+	</body>
+</html>
