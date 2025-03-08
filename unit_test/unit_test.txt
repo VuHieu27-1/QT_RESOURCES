@@ -1,0 +1,18 @@
+ctest -V | Select-String -Pattern "Test command|Totals|\b(FAIL|PASS|SKIP|BLACKLIST)\b" -CaseSensitive | Select-String -NotMatch "Error|critical|Processing" | ForEach-Object {
+    $firstFourWords = ($_ -split " " | Select-Object -First 4) -join " "
+    if ($firstFourWords -match "FAIL") {
+        Write-Host $_.Line -ForegroundColor Red
+    }
+    elseif ($firstFourWords -match "SKIP") {
+        Write-Host $_.Line -ForegroundColor Yellow
+    }
+    elseif ($firstFourWords -match "PASS") {
+        Write-Host $_.Line -ForegroundColor Green
+    }
+    elseif ($firstFourWords -match "BLACKLIST") {
+        Write-Host $_.Line -ForegroundColor Blue
+    }
+    else {
+        Write-Host $_.Line
+    }
+}

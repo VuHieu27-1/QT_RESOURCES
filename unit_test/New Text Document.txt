@@ -1,0 +1,6 @@
+    qDebug() << "Check Sync....";
+    if (shouldStopSync) {
+        qCInfo(lcEngine) << "Sync is disabled. Skipping synchronization.";
+        finalize(false);
+        return;
+    }

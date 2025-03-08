@@ -1,0 +1,40 @@
+#include "network_utils.h"
+
+bool CheckNetworkCost() {
+    ConnectionProfile profile = NetworkInformation::GetInternetConnectionProfile();
+    if (!profile) {
+        qDebug() << "No active internet connection profile found. Sync not allowed!";
+        return false;
+    }
+
+    ConnectionCost cost = profile.GetConnectionCost();
+
+    if (cost.NetworkCostType() == NetworkCostType::Unrestricted) {
+        qDebug() << "Unrestricted Network. Sync Allowed!";
+        return true;
+    }
+
+    if (cost.NetworkCostType() == NetworkCostType::Fixed || cost.NetworkCostType() == NetworkCostType::Variable) {
+        qDebug() << "Metered Network. Sync Not Allowed!";
+        return false;
+    }
+
+    return true;
+}
+
+
+network_utils.h/////////////////////////////////////////////
+
+#ifndef NETWORK_UTILS_H
+#define NETWORK_UTILS_H
+
+#include <winrt/Windows.Networking.Connectivity.h>
+#include <iostream>
+#include <QDebug>
+using namespace winrt;
+using namespace Windows::Networking::Connectivity;
+
+// Kiểm tra xem mạng có phải là "Unrestricted" không (tức là có thể sync)
+bool CheckNetworkCost();
+
+#endif // NETWORK_UTILS_H
