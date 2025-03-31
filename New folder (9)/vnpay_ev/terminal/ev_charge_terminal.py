@@ -1,7 +1,8 @@
 import requests
 import urllib.parse
+import qrcode
 
-# Đơn giá mỗi kWh
+# Đơn giá mỗi kWh theo chế độ
 PRICE_PER_KWH = {
     'fast': 5000,
     'slow': 3000
@@ -19,7 +20,7 @@ def choose_mode():
         elif choice == '2':
             return 'slow'
         else:
-            print("Lựa chọn không hợp lệ, vui lòng chọn lại.")
+            print("❌ Lựa chọn không hợp lệ, vui lòng chọn lại.")
 
 # 2. Nhập số tiền
 def enter_amount():
@@ -29,13 +30,12 @@ def enter_amount():
             if amount >= 1000:
                 return amount
             else:
-                print("Số tiền phải từ 1.000 VNĐ trở lên.")
+                print("❌ Số tiền phải từ 1.000 VNĐ trở lên.")
         except ValueError:
-            print("Vui lòng nhập số hợp lệ.")
+            print("❌ Vui lòng nhập số hợp lệ.")
 
 # 3. Gửi request tạo URL thanh toán
 def create_vnpay_qr(mode, amount):
-    # Gửi POST request tới server Django của bạn
     SERVER_URL = "http://localhost:5000/create_payment/"
     data = {
         'mode': mode,
@@ -43,20 +43,32 @@ def create_vnpay_qr(mode, amount):
     }
     try:
         response = requests.post(SERVER_URL, json=data)
-        result = response.json()
-        print("\n==== Mã QR thanh toán ====")
-        print("URL Thanh toán:", result['payment_url'])
-        print("Vui lòng dùng ứng dụng VNPay hoặc ngân hàng quét mã QR này để thanh toán.\n")
-    except Exception as e:
-        print("Lỗi khi tạo QR thanh toán:", e)
+        if response.status_code == 200:
+            result = response.json()
+            payment_url = result['payment_url']
+            print("\n==== ✅ Mã QR thanh toán ====")
+            print("🔗 URL:", payment_url)
 
+            # Sinh mã QR
+            qr = qrcode.make(payment_url)
+            qr.show()
+
+            # Tuỳ chọn lưu QR ra file
+            qr.save("vnpay_qr.png")
+            print("📁 Đã lưu QR tại: vnpay_qr.png")
+        else:
+            print("❌ Lỗi tạo thanh toán:", response.status_code, response.text)
+    except Exception as e:
+        print("❌ Lỗi khi tạo QR thanh toán:", e)
+
+# 4. Chạy quy trình chính
 def main():
     mode = choose_mode()
     amount = enter_amount()
     price = PRICE_PER_KWH[mode]
     kwh = amount / price
-    print(f"\n👉 Bạn đã chọn chế độ '{mode.upper()}' với số tiền {amount} VNĐ.")
-    print(f"⚡ Sẽ sạc được khoảng {kwh:.2f} kWh.")
+    print(f"\n👉 Bạn đã chọn chế độ **{mode.upper()}** với số tiền **{amount} VNĐ**.")
+    print(f"⚡ Sẽ sạc được khoảng **{kwh:.2f} kWh**.\n")
 
     create_vnpay_qr(mode, amount)
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kết quả thanh toán</title>
+  </head>
+  <body>
+    <h1>{{ result }}</h1>
+
+    {% if data %}
+    <h3>Chi tiết giao dịch:</h3>
+    <ul>
+      <li>Số tiền: {{ data.vnp_Amount|default:"N/A" }}</li>
+      <li>Ngân hàng: {{ data.vnp_BankCode|default:"N/A" }}</li>
+      <li>Mã giao dịch: {{ data.vnp_TransactionNo|default:"N/A" }}</li>
+      <li>Thời gian: {{ data.vnp_PayDate|default:"N/A" }}</li>
+      <li>Mô tả: {{ data.vnp_OrderInfo|default:"N/A" }}</li>
+    </ul>
+    {% else %}
+    <p>Không có dữ liệu giao dịch.</p>
+    {% endif %}
+  </body>
+</html>

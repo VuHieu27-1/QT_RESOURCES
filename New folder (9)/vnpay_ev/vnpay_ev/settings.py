@@ -35,7 +35,7 @@ ROOT_URLCONF = 'vnpay_ev.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # Không dùng templates, vì chạy bằng terminal
+        'DIRS': [os.path.join(BASE_DIR, 'evcharge', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
