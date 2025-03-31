@@ -1,7 +1,18 @@
 import requests
 import urllib.parse
 import qrcode
+import logging
+import os
 
+# Tự động tạo file log cùng cấp với script
+log_file = os.path.join(os.path.dirname(__file__), '..', 'charging_log.txt')
+
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 # Đơn giá mỗi kWh theo chế độ
 PRICE_PER_KWH = {
     'fast': 5000,
@@ -41,6 +52,7 @@ def create_vnpay_qr(mode, amount):
         'mode': mode,
         'amount': amount
     }
+    logging.info(f"Bắt đầu giao dịch | Chế độ: {mode} | Số tiền: {amount} VNĐ")
     try:
         response = requests.post(SERVER_URL, json=data)
         if response.status_code == 200:

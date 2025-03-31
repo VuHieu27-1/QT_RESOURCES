@@ -5,7 +5,15 @@ from django.shortcuts import render
 from datetime import datetime
 from .vnpay import VNPay
 import json
-
+import logging
+import os
+log_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'charging_log.txt')
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 @csrf_exempt
 def create_payment(request):
     if request.method == 'POST':
@@ -42,8 +50,10 @@ def payment_return(request):
 
     if vnp.validate_response(settings.VNPAY_HASH_SECRET_KEY):
         if vnp.response_data.get("vnp_ResponseCode") == "00":
+            logging.info(f"Giao dịch thành công | Mã: {vnp.response_data.get('vnp_TransactionNo')} | Số tiền: {int(vnp.response_data.get('vnp_Amount')) / 100} VND")
             result = "✅ Thanh toán thành công!"
         else:
+            logging.error("❌ Giao dịch thất bại.")
             result = "❌ Thanh toán thất bại!"
 
         return render(request, "payment_return.html", {
@@ -55,3 +65,4 @@ def payment_return(request):
             "result": "⚠️ Sai checksum! Giao dịch không hợp lệ!",
             "data": {}
         })
+

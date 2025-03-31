@@ -1,0 +1,20 @@
+2025-04-01 00:45:32 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: slow | S\u1ed1 ti\u1ec1n: 30000 VN\u0110
+2025-04-01 00:46:45 [INFO] \u2705 Giao d\u1ecbch thành công | Mã: 14883207 | Ti\u1ec1n: 30000.0 VN\u0110
+2025-04-01 00:46:45 [ERROR] Internal Server Error: /payment_return/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py", line 58, in payment_return
+    "result": result,
+              ^^^^^^
+NameError: name 'result' is not defined
+2025-04-01 00:47:13 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-01 00:47:37 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-01 00:47:38 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-01 00:47:40 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-01 00:47:51 [INFO] Giao d\u1ecbch thành công | Mã: 14883207 | S\u1ed1 ti\u1ec1n: 30000.0 VND
+2025-04-01 00:48:30 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
