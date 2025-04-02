@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '*bzwzl9d&aq)rg2z9(@twit_)=5fp77et3i&l4-xp1h$r)^+gp'  # Thay bằng secret key thật khi deploy
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']  # Cho phép tất cả domain (đơn giản test)
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -89,7 +89,7 @@ STATIC_URL = '/static/'
 # ⚡ VNPAY Sandbox Configuration
 # =============================
 
-VNPAY_RETURN_URL = 'https://b43e-171-225-185-52.ngrok-free.app/payment_return'
+VNPAY_RETURN_URL = 'https://fc8d-171-225-185-52.ngrok-free.app/payment_return'
 VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'
 VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
 VNPAY_TMN_CODE = '13LG33SP'

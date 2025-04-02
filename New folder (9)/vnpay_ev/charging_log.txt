@@ -1,20 +1,13 @@
-2025-04-01 00:45:32 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: slow | S\u1ed1 ti\u1ec1n: 30000 VN\u0110
-2025-04-01 00:46:45 [INFO] \u2705 Giao d\u1ecbch thành công | Mã: 14883207 | Ti\u1ec1n: 30000.0 VN\u0110
-2025-04-01 00:46:45 [ERROR] Internal Server Error: /payment_return/
-Traceback (most recent call last):
-  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
-    response = get_response(request)
-               ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py", line 58, in payment_return
-    "result": result,
-              ^^^^^^
-NameError: name 'result' is not defined
-2025-04-01 00:47:13 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
-2025-04-01 00:47:37 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
-2025-04-01 00:47:38 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
-2025-04-01 00:47:40 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
-2025-04-01 00:47:51 [INFO] Giao d\u1ecbch thành công | Mã: 14883207 | S\u1ed1 ti\u1ec1n: 30000.0 VND
-2025-04-01 00:48:30 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-02 23:10:42 [WARNING] Bad Request: /create_payment/
+2025-04-02 23:11:13 [INFO] Created payment URL for 20250402231113: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250402231113&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ffc8d-171-225-185-52.ngrok-free.app%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250402231113&vnp_Version=2.1.0&vnp_SecureHash=e754a6dfaf380c4bab4c499471ac3c6ed7f2b40a90fa2b32e2d0f93a79447791d737d3718045945918fc7644de90babaff22049145c3b6b0d9d0296b6912b499
+2025-04-02 23:11:20 [INFO] Created payment URL for 20250402231120: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250402231120&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ffc8d-171-225-185-52.ngrok-free.app%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250402231120&vnp_Version=2.1.0&vnp_SecureHash=b6331d1a8b8475104183963d225367055ac62a6cc3d1386486041e3b9c13f797ca9cf9ec61cc973467da05780282807d6f3e52ced72851b651e494ba8a481cb0
+2025-04-02 23:17:13 [WARNING] Not Found: /
+2025-04-02 23:17:13 [WARNING] Not Found: /favicon.ico
+2025-04-02 23:38:00 [INFO] Created payment URL for 20250402233800: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250402233800&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ffc8d-171-225-185-52.ngrok-free.app%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250402233800&vnp_Version=2.1.0&vnp_SecureHash=bc038e7d7ff7d2fff10ddbce0f7f2ab520eed0fffe6cddf22cbad4ffc0c97ce2fbe29f05809fcbce1e6a9348c05395ed21681b1eca6e0ef51ca15c28f6c7f13f
+2025-04-02 23:40:48 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-03 00:06:05 [INFO] Created payment URL for 20250403000605: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250403000605&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ffc8d-171-225-185-52.ngrok-free.app%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250403000605&vnp_Version=2.1.0&vnp_SecureHash=298f258561ab9f6e2d3856a1794ffaf6a89caaf237b5009cf21e2254b72eaf5eb6d4ab8850706eeb23657572e5e664c292817576b0ee05caf575dc367db00752
+2025-04-03 00:08:46 [WARNING] Not Found: /
+2025-04-03 00:18:12 [WARNING] Not Found: /
+2025-04-03 01:01:00 [WARNING] Method Not Allowed: /create_payment/
+2025-04-03 01:08:12 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-03 01:12:50 [INFO] Created payment URL for 20250403011250: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250403011250&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ffc8d-171-225-185-52.ngrok-free.app%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250403011250&vnp_Version=2.1.0&vnp_SecureHash=6519e26eed47332c18ffbad8539e0630aef2b197119620f95970380e8153cdaf2c387340a7720dc07441a1f6502e1e6daf7646be400c72f91160da159861c8af
