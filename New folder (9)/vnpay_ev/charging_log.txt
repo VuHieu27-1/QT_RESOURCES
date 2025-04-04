@@ -27,3 +27,19 @@
 2025-04-04 01:12:51 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
 2025-04-04 01:13:26 [INFO] Created payment URL for 20250404011326: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250404011326&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2Flocalhost%3A5000%2Fpayment_return&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250404011326&vnp_Version=2.1.0&vnp_SecureHash=9f6d03ec771b6118e0a8401d4ec49888bdc863ae490ff2bc8ecee5071db9e357703bb62d733399570f86b64641cd6d7fd8db954f149fa2bcfe9b4ec4afe67fed
 2025-04-04 01:21:47 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:06:30 [WARNING] Not Found: /
+2025-04-04 19:06:30 [WARNING] Not Found: /favicon.ico
+2025-04-04 19:07:42 [WARNING] Not Found: /
+2025-04-04 19:11:12 [WARNING] Not Found: /
+2025-04-04 19:17:04 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:17:11 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:18:10 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:20:17 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 500000 VN\u0110
+2025-04-04 19:21:44 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 500000 VN\u0110
+2025-04-04 19:23:52 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:25:05 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-04 19:25:28 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 500000 VN\u0110
+2025-04-04 19:25:55 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-04 19:27:42 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 500000 VN\u0110
+2025-04-04 19:28:59 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-04 19:28:59 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 405 

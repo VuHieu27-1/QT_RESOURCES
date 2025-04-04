@@ -89,8 +89,8 @@ STATIC_URL = '/static/'
 # ⚡ VNPAY Sandbox Configuration
 # =============================
 
-VNPAY_RETURN_URL = 'https://fc39-171-225-185-52.ngrok-free.app/payment_return'
+VNPAY_RETURN_URL = 'http://192.168.101.12:8081/payment_return'
 VNPAY_PAYMENT_URL = 'https://sandbox.vnpayment.vn/paymentv2/vpcpay.html'
 VNPAY_API_URL = 'https://sandbox.vnpayment.vn/merchant_webapi/api/transaction'
-VNPAY_TMN_CODE = '13LG33SP'
-VNPAY_HASH_SECRET_KEY = '092LVCTP288T25T103HGYL6ZKXBOSVQL'
+VNPAY_TMN_CODE = '1O1EZ0CY'
+VNPAY_HASH_SECRET_KEY = 'VERPKN65XVWGXKKMVI21I3AJ2B6AAY81'
