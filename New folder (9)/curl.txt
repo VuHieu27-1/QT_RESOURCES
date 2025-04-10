@@ -1,1 +1,8 @@
-curl -X POST "https://fc8d-171-225-185-52.ngrok-free.app/create_payment/" -H "Content-Type: application/json" -d "{\"mode\":\"fast\",\"amount\":50000}" 
+curl -X POST "http://127.0.0.1:5000/create_payment/" -H "Content-Type: application/json" -d "{\"mode\":\"fast\",\"amount\":50000}" 
+
+
+test server : 
+curl -X POST http://localhost:5000/api/create-payment -H "Content-Type: application/json"  -d "{\"amount\": 10000, \"mode\": \"fast\"}"
+
+check thanh toán : 
+curl -X POST http://localhost:5000/api/check-payment -H "Content-Type: application/json" -d "{\"app_trans_id\": \"240407_1712493002\"}"

@@ -43,3 +43,4514 @@
 2025-04-04 19:27:42 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 500000 VN\u0110
 2025-04-04 19:28:59 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
 2025-04-04 19:28:59 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 405 
+2025-04-06 21:43:13 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-06 21:43:15 [ERROR] Internal Server Error: /payment_return
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2025-04-06 21:43:15 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 500 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>RuntimeError
+          at /payment_return</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>RuntimeError
+       at /payment_return</h1>
+  <pre class="exception_value">You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://localhost:8000/payment_return</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>3.2.4</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>RuntimeError</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td><span class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</span>, line 88, in get_full_path_with_slash</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>C:\Python312\python.exe</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.12.6</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#x27;C:\\Users\\Admin\\Desktop\\QT_RESOURCES\\New folder (9)\\vnpay_ev&#x27;,
+ &#x27;C:\\Python312\\python312.zip&#x27;,
+ &#x27;C:\\Python312\\DLLs&#x27;,
+ &#x27;C:\\Python312\\Lib&#x27;,
+ &#x27;C:\\Python312&#x27;,
+ &#x27;C:\\Users\\Admin\\AppData\\Roaming\\Python\\Python312\\site-packages&#x27;,
+ &#x27;C:\\Python312\\Lib\\site-packages&#x27;,
+ &#x27;C:\\Users\\Admin\\AppData\\Roaming\\Python\\Python312\\site-packages\\setuptools\\_vendor&#x27;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Sun, 06 Apr 2025 21:43:15 +0700</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py</code>, line 47, in inner
+          
+
+          
+            <div class="context" id="c2751928324544">
+              
+                <ol start="40" class="pre-context" id="pre2751928324544">
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>                response = await sync_to_async(response_for_exception, thread_sensitive=False)(request, exc)</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>            return response</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="47" class="context-line">
+                <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>                response = get_response(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='48' class="post-context" id="post2751928324544">
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2751928324544', 'post2751928324544')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2751928324544')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2751928324544">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>RuntimeError(&quot;You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x00000280BB63AC30&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py</code>, line 116, in __call__
+          
+
+          
+            <div class="context" id="c2751928322240">
+              
+                <ol start="109" class="pre-context" id="pre2751928322240">
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>    def __call__(self, request):</pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        # Exit out to async mode, if needed</pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        if asyncio.iscoroutinefunction(self.get_response):</pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>            return self.__acall__(request)</pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        response = None</pre></li>
+                
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        if hasattr(self, &#x27;process_request&#x27;):</pre></li>
+                
+                </ol>
+              
+              <ol start="116" class="context-line">
+                <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>            response = self.process_request(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='117' class="post-context" id="post2751928322240">
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        response = response or self.get_response(request)</pre></li>
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        if hasattr(self, &#x27;process_response&#x27;):</pre></li>
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>            response = self.process_response(request, response)</pre></li>
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2751928322240', 'post2751928322240')"><pre>    async def __acall__(self, request):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2751928322240')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2751928322240">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x00000280BB63AC30&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</code>, line 54, in process_request
+          
+
+          
+            <div class="context" id="c2751928324800">
+              
+                <ol start="47" class="pre-context" id="pre2751928324800">
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        # Check for a redirect based on settings.PREPEND_WWW</pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        host = request.get_host()</pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        must_prepend = settings.PREPEND_WWW and host and not host.startswith(&#x27;www.&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        redirect_url = (&#x27;%s://www.%s&#x27; % (request.scheme, host)) if must_prepend else &#x27;&#x27;</pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        # Check if a slash should be appended</pre></li>
+                
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        if self.should_redirect_with_slash(request):</pre></li>
+                
+                </ol>
+              
+              <ol start="54" class="context-line">
+                <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>            path = self.get_full_path_with_slash(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='55' class="post-context" id="post2751928324800">
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        else:</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>            path = request.get_full_path()</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        # Return a redirect if necessary</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>        if redirect_url or path != request.get_full_path():</pre></li>
+                  
+                  <li onclick="toggle('pre2751928324800', 'post2751928324800')"><pre>            redirect_url += path</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2751928324800')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2751928324800">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>host</td>
+                    <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>must_prepend</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>redirect_url</td>
+                    <td class="code"><pre>&#x27;&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x00000280BB63AC30&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>user_agent</td>
+                    <td class="code"><pre>&#x27;python-requests/2.32.3&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</code>, line 88, in get_full_path_with_slash
+          
+
+          
+            <div class="context" id="c2751925990656">
+              
+                <ol start="81" class="pre-context" id="pre2751925990656">
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        Raise a RuntimeError if settings.DEBUG is True and request.method is</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        POST, PUT, or PATCH.</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        new_path = request.get_full_path(force_append_slash=True)</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        # Prevent construction of scheme relative urls.</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        new_path = escape_leading_slashes(new_path)</pre></li>
+                
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>        if settings.DEBUG and request.method in (&#x27;POST&#x27;, &#x27;PUT&#x27;, &#x27;PATCH&#x27;):</pre></li>
+                
+                </ol>
+              
+              <ol start="88" class="context-line">
+                <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>            raise RuntimeError(</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='89' class="post-context" id="post2751925990656">
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                &quot;You called this URL via %(method)s, but the URL doesn&#x27;t end &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                &quot;in a slash and you have APPEND_SLASH set. Django can&#x27;t &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                &quot;redirect to the slash URL while maintaining %(method)s data. &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                &quot;Change your form to point to %(url)s (note the trailing &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                &quot;slash), or set APPEND_SLASH=False in your Django settings.&quot; % {</pre></li>
+                  
+                  <li onclick="toggle('pre2751925990656', 'post2751925990656')"><pre>                    &#x27;method&#x27;: request.method,</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2751925990656')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2751925990656">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>new_path</td>
+                    <td class="code"><pre>&#x27;/payment_return/&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x00000280BB63AC30&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="RuntimeError at /payment_return">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://localhost:8000/payment_return
+
+Django Version: 3.2.4
+Python Version: 3.12.6
+Installed Applications:
+[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;evcharge&#x27;]
+Installed Middleware:
+[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+
+Exception Type: RuntimeError at /payment_return
+Exception Value: You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to localhost:8000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+</div>
+
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>[unable to retrieve the current user]</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ALLUSERSPROFILE</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPDATA</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Roaming&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BUNDLED_DEBUGPY_PATH</td>
+          <td class="code"><pre>&#x27;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\bundled\\libs\\debugpy&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHOCOLATEYINSTALL</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData\\chocolatey&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHOCOLATEYLASTPATHUPDATE</td>
+          <td class="code"><pre>&#x27;133768380203932359&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHROME_CRASHPAD_PIPE_NAME</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\crashpad_9168_CELRVFCPVHMQOKFJ&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CLASSPATH</td>
+          <td class="code"><pre>&#x27;.;&quot;C:\\Program Files\\JDBC\\postgresql-42.7.4&quot;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COLORTERM</td>
+          <td class="code"><pre>&#x27;truecolor&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMPUTERNAME</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMSPEC</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\system32\\cmd.exe&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;33&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;application/json&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;vnpay_ev.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DRIVERDATA</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\System32\\Drivers\\DriverData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_APP_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Internet Explorer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_USER_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GIT_ASKPASS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEPATH</td>
+          <td class="code"><pre>&#x27;\\Users\\Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT_ENCODING</td>
+          <td class="code"><pre>&#x27;gzip, deflate&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CONNECTION</td>
+          <td class="code"><pre>&#x27;keep-alive&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;python-requests/2.32.3&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>JAVA_HOME</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;en_US.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALAPPDATA</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGONSERVER</td>
+          <td class="code"><pre>&#x27;\\\\DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MOZ_PLUGIN_PATH</td>
+          <td class="code"><pre>&#x27;D:\\New folder (6)\\Foxit PDF Reader\\plugins\\&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_OF_PROCESSORS</td>
+          <td class="code"><pre>&#x27;8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ONEDRIVE</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\OneDrive&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ORIGINAL_XDG_CURRENT_DESKTOP</td>
+          <td class="code"><pre>&#x27;undefined&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>OS</td>
+          <td class="code"><pre>&#x27;Windows_NT&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>(&#x27;C:\\Python312\\Scripts\\;C:\\Python312\\;C:\\Program Files\\Eclipse &#x27;
+ &#x27;Adoptium\\jdk-21.0.5.11-hotspot\\bin;C:\\Program Files\\Common &#x27;
+ &#x27;Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program &#x27;
+ &#x27;Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA &#x27;
+ &#x27;Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program &#x27;
+ &#x27;Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin;C:\\Program &#x27;
+ &#x27;Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK &#x27;
+ &#x27;Utility;C:\\Program &#x27;
+ &#x27;Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program &#x27;
+ &#x27;Files\\Cloudflare\\Cloudflare WARP\\;C:\\Program Files\\Microsoft SQL &#x27;
+ &#x27;Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client &#x27;
+ &#x27;SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files &#x27;
+ &#x27;(x86)\\Windows Kits\\10\\Windows Performance &#x27;
+ &#x27;Toolkit\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;D:\\flag\\modelsim_ase\\win32aloem;D:\\modelsim\\modelsim_ase\\win32aloem;D:\\modelsim\\modelsim_ae\\win32aloem;D:\\mdsim\\modelsim_ase\\win32aloem;D:\\code\\Microsoft &#x27;
+ &#x27;VS &#x27;
+ &#x27;Code\\bin;C:\\msys64\\mingw64\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\.dotnet\\tools;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\bundled\\scripts\\noConfigScripts&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATHEXT</td>
+          <td class="code"><pre>&#x27;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/payment_return&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_ARCHITECTURE</td>
+          <td class="code"><pre>&#x27;AMD64&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_IDENTIFIER</td>
+          <td class="code"><pre>&#x27;Intel64 Family 6 Model 165 Stepping 3, GenuineIntel&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_LEVEL</td>
+          <td class="code"><pre>&#x27;6&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_REVISION</td>
+          <td class="code"><pre>&#x27;a503&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMDATA</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROMPT</td>
+          <td class="code"><pre>&#x27;$P$G&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PSMODULEPATH</td>
+          <td class="code"><pre>(&#x27;C:\\Users\\Admin\\Documents\\WindowsPowerShell\\Modules;C:\\Program &#x27;
+ &#x27;Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PUBLIC</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Public&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYDEVD_DISABLE_FILE_VALIDATION</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;127.0.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;kubernetes.docker.internal&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSIONNAME</td>
+          <td class="code"><pre>&#x27;Console&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STM32CUBEMX_PATH</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Programs\\STM32CubeMX&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STM32_PRG_PATH</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMROOT</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMP</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Temp&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM</td>
+          <td class="code"><pre>&#x27;vscode&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM_VERSION</td>
+          <td class="code"><pre>&#x27;1.99.0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TMP</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Temp&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN_ROAMINGPROFILE</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERNAME</td>
+          <td class="code"><pre>&#x27;Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERPROFILE</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_DEBUGPY_ADAPTER_ENDPOINTS</td>
+          <td class="code"><pre>&#x27;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\.noConfigDebugAdapterEndpoints\\endpoint-25a950aad9ce70c6.txt&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_EXTRA_ARGS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_MAIN</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_NODE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_IPC_HANDLE</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\vscode-git-dfaaeaaecb-sock&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_INJECTION</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WINDIR</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x00000280BB8FFCB0&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>vnpay_ev.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Setting</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;*&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>[&#x27;django.contrib.auth.backends.ModelBackend&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;auth.User&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>WindowsPath(&#x27;C:/Users/Admin/Desktop/QT_RESOURCES/New folder (9)/vnpay_ev&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.sqlite3&#x27;,
+             &#x27;HOST&#x27;: &#x27;&#x27;,
+             &#x27;NAME&#x27;: WindowsPath(&#x27;C:/Users/Admin/Desktop/QT_RESOURCES/New folder (9)/vnpay_ev/db.sqlite3&#x27;),
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.AutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FILE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.core.files.storage.FileSystemStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_HASHING_ALGORITHM</td>
+          <td class="code"><pre>&#x27;sha256&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;evcharge&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian BokmÃ¥l&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;fa&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;vnpay_ev.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_BROWSER_XSS_FILTER</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;vnpay_ev.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>&#x27;/static/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[{&#x27;APP_DIRS&#x27;: True,
+  &#x27;BACKEND&#x27;: &#x27;django.template.backends.django.DjangoTemplates&#x27;,
+  &#x27;DIRS&#x27;: [&#x27;C:\\Users\\Admin\\Desktop\\QT_RESOURCES\\New folder &#x27;
+           &#x27;(9)\\vnpay_ev\\evcharge\\templates&#x27;],
+  &#x27;OPTIONS&#x27;: {&#x27;context_processors&#x27;: [&#x27;django.template.context_processors.debug&#x27;,
+                                     &#x27;django.template.context_processors.request&#x27;,
+                                     &#x27;django.contrib.auth.context_processors.auth&#x27;,
+                                     &#x27;django.contrib.messages.context_processors.messages&#x27;]}}]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;Asia/Ho_Chi_Minh&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_L10N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_API_URL</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_HASH_SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_PAYMENT_URL</td>
+          <td class="code"><pre>&#x27;https://sandbox.vnpayment.vn/paymentv2/vpcpay.html&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_RETURN_URL</td>
+          <td class="code"><pre>&#x27;http://localhost:8000/payment_return&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_TMN_CODE</td>
+          <td class="code"><pre>&#x27;1O1EZ0CY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;vnpay_ev.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+  <div id="explanation">
+    <p>
+      Youâ\x80\x99re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </div>
+
+</body>
+</html>
+
+2025-04-06 21:43:47 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 21:44:13 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-06 21:44:17 [ERROR] L\u1ed7i khi t\u1ea1o QR thanh toán: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /payment_return (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002170BABD6A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-06 21:45:11 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 5000 VN\u0110
+2025-04-06 21:45:15 [ERROR] L\u1ed7i khi t\u1ea1o QR thanh toán: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /payment_return (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001CDD5B596A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-04-06 21:46:10 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-06 21:46:10 [ERROR] Internal Server Error: /payment_return
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:5000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2025-04-06 21:46:10 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 500 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>RuntimeError
+          at /payment_return</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<div id="summary">
+  <h1>RuntimeError
+       at /payment_return</h1>
+  <pre class="exception_value">You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:5000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre>
+  <table class="meta">
+
+    <tr>
+      <th>Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th>Request URL:</th>
+      <td>http://127.0.0.1:5000/payment_return</td>
+    </tr>
+
+    <tr>
+      <th>Django Version:</th>
+      <td>3.2.4</td>
+    </tr>
+
+    <tr>
+      <th>Exception Type:</th>
+      <td>RuntimeError</td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Value:</th>
+      <td><pre>You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:5000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.</pre></td>
+    </tr>
+
+
+    <tr>
+      <th>Exception Location:</th>
+      <td><span class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</span>, line 88, in get_full_path_with_slash</td>
+    </tr>
+
+    <tr>
+      <th>Python Executable:</th>
+      <td>C:\Python312\python.exe</td>
+    </tr>
+    <tr>
+      <th>Python Version:</th>
+      <td>3.12.6</td>
+    </tr>
+    <tr>
+      <th>Python Path:</th>
+      <td><pre>[&#x27;C:\\Users\\Admin\\Desktop\\QT_RESOURCES\\New folder (9)\\vnpay_ev&#x27;,
+ &#x27;C:\\Python312\\python312.zip&#x27;,
+ &#x27;C:\\Python312\\DLLs&#x27;,
+ &#x27;C:\\Python312\\Lib&#x27;,
+ &#x27;C:\\Python312&#x27;,
+ &#x27;C:\\Users\\Admin\\AppData\\Roaming\\Python\\Python312\\site-packages&#x27;,
+ &#x27;C:\\Python312\\Lib\\site-packages&#x27;,
+ &#x27;C:\\Users\\Admin\\AppData\\Roaming\\Python\\Python312\\site-packages\\setuptools\\_vendor&#x27;]</pre></td>
+    </tr>
+    <tr>
+      <th>Server time:</th>
+      <td>Sun, 06 Apr 2025 21:46:10 +0700</td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py</code>, line 47, in inner
+          
+
+          
+            <div class="context" id="c2158733478272">
+              
+                <ol start="40" class="pre-context" id="pre2158733478272">
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>                response = await sync_to_async(response_for_exception, thread_sensitive=False)(request, exc)</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>            return response</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="47" class="context-line">
+                <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>                response = get_response(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='48' class="post-context" id="post2158733478272">
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2158733478272', 'post2158733478272')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2158733478272')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2158733478272">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>RuntimeError(&quot;You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:5000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x000001F69E203A40&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py</code>, line 116, in __call__
+          
+
+          
+            <div class="context" id="c2158733481024">
+              
+                <ol start="109" class="pre-context" id="pre2158733481024">
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>    def __call__(self, request):</pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        # Exit out to async mode, if needed</pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        if asyncio.iscoroutinefunction(self.get_response):</pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>            return self.__acall__(request)</pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        response = None</pre></li>
+                
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        if hasattr(self, &#x27;process_request&#x27;):</pre></li>
+                
+                </ol>
+              
+              <ol start="116" class="context-line">
+                <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>            response = self.process_request(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='117' class="post-context" id="post2158733481024">
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        response = response or self.get_response(request)</pre></li>
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        if hasattr(self, &#x27;process_response&#x27;):</pre></li>
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>            response = self.process_response(request, response)</pre></li>
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2158733481024', 'post2158733481024')"><pre>    async def __acall__(self, request):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2158733481024')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2158733481024">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x000001F69E203A40&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</code>, line 54, in process_request
+          
+
+          
+            <div class="context" id="c2158733476736">
+              
+                <ol start="47" class="pre-context" id="pre2158733476736">
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        # Check for a redirect based on settings.PREPEND_WWW</pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        host = request.get_host()</pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        must_prepend = settings.PREPEND_WWW and host and not host.startswith(&#x27;www.&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        redirect_url = (&#x27;%s://www.%s&#x27; % (request.scheme, host)) if must_prepend else &#x27;&#x27;</pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        # Check if a slash should be appended</pre></li>
+                
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        if self.should_redirect_with_slash(request):</pre></li>
+                
+                </ol>
+              
+              <ol start="54" class="context-line">
+                <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>            path = self.get_full_path_with_slash(request)</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='55' class="post-context" id="post2158733476736">
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        else:</pre></li>
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>            path = request.get_full_path()</pre></li>
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        # Return a redirect if necessary</pre></li>
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>        if redirect_url or path != request.get_full_path():</pre></li>
+                  
+                  <li onclick="toggle('pre2158733476736', 'post2158733476736')"><pre>            redirect_url += path</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2158733476736')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2158733476736">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>host</td>
+                    <td class="code"><pre>&#x27;127.0.0.1:5000&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>must_prepend</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>redirect_url</td>
+                    <td class="code"><pre>&#x27;&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x000001F69E203A40&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>user_agent</td>
+                    <td class="code"><pre>&#x27;python-requests/2.32.3&#x27;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py</code>, line 88, in get_full_path_with_slash
+          
+
+          
+            <div class="context" id="c2158733480064">
+              
+                <ol start="81" class="pre-context" id="pre2158733480064">
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        Raise a RuntimeError if settings.DEBUG is True and request.method is</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        POST, PUT, or PATCH.</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        new_path = request.get_full_path(force_append_slash=True)</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        # Prevent construction of scheme relative urls.</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        new_path = escape_leading_slashes(new_path)</pre></li>
+                
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>        if settings.DEBUG and request.method in (&#x27;POST&#x27;, &#x27;PUT&#x27;, &#x27;PATCH&#x27;):</pre></li>
+                
+                </ol>
+              
+              <ol start="88" class="context-line">
+                <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>            raise RuntimeError(</pre> <span>â\x80¦</span></li>
+              </ol>
+              
+                <ol start='89' class="post-context" id="post2158733480064">
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                &quot;You called this URL via %(method)s, but the URL doesn&#x27;t end &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                &quot;in a slash and you have APPEND_SLASH set. Django can&#x27;t &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                &quot;redirect to the slash URL while maintaining %(method)s data. &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                &quot;Change your form to point to %(url)s (note the trailing &quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                &quot;slash), or set APPEND_SLASH=False in your Django settings.&quot; % {</pre></li>
+                  
+                  <li onclick="toggle('pre2158733480064', 'post2158733480064')"><pre>                    &#x27;method&#x27;: request.method,</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            <div class="commands">
+                
+                    <a href="#" onclick="return varToggle(this, '2158733480064')"><span>&#x25b6;</span> Local vars</a>
+                
+            </div>
+            <table class="vars" id="v2158733480064">
+              <thead>
+                <tr>
+                  <th>Variable</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>new_path</td>
+                    <td class="code"><pre>&#x27;/payment_return/&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/payment_return&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.middleware.common.CommonMiddleware object at 0x000001F69E203A40&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+          
+        </li>
+      
+    </ul>
+  </div>
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="RuntimeError at /payment_return">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://127.0.0.1:5000/payment_return
+
+Django Version: 3.2.4
+Python Version: 3.12.6
+Installed Applications:
+[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;evcharge&#x27;]
+Installed Middleware:
+[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\middleware\common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+
+Exception Type: RuntimeError at /payment_return
+Exception Value: You called this URL via POST, but the URL doesn&#x27;t end in a slash and you have APPEND_SLASH set. Django can&#x27;t redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:5000/payment_return/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+</div>
+
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>[unable to retrieve the current user]</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Variable</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ALLUSERSPROFILE</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPDATA</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Roaming&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BUNDLED_DEBUGPY_PATH</td>
+          <td class="code"><pre>&#x27;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\bundled\\libs\\debugpy&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHOCOLATEYINSTALL</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData\\chocolatey&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHOCOLATEYLASTPATHUPDATE</td>
+          <td class="code"><pre>&#x27;133768380203932359&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHROME_CRASHPAD_PIPE_NAME</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\crashpad_9168_CELRVFCPVHMQOKFJ&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CLASSPATH</td>
+          <td class="code"><pre>&#x27;.;&quot;C:\\Program Files\\JDBC\\postgresql-42.7.4&quot;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COLORTERM</td>
+          <td class="code"><pre>&#x27;truecolor&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMPUTERNAME</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMSPEC</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\system32\\cmd.exe&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;33&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;application/json&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;vnpay_ev.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DRIVERDATA</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\System32\\Drivers\\DriverData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_APP_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Internet Explorer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_USER_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GIT_ASKPASS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEPATH</td>
+          <td class="code"><pre>&#x27;\\Users\\Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT_ENCODING</td>
+          <td class="code"><pre>&#x27;gzip, deflate&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CONNECTION</td>
+          <td class="code"><pre>&#x27;keep-alive&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;127.0.0.1:5000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;python-requests/2.32.3&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>JAVA_HOME</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.5.11-hotspot\\&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;en_US.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALAPPDATA</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGONSERVER</td>
+          <td class="code"><pre>&#x27;\\\\DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MOZ_PLUGIN_PATH</td>
+          <td class="code"><pre>&#x27;D:\\New folder (6)\\Foxit PDF Reader\\plugins\\&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_OF_PROCESSORS</td>
+          <td class="code"><pre>&#x27;8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ONEDRIVE</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\OneDrive&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ORIGINAL_XDG_CURRENT_DESKTOP</td>
+          <td class="code"><pre>&#x27;undefined&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>OS</td>
+          <td class="code"><pre>&#x27;Windows_NT&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>(&#x27;C:\\Python312\\Scripts\\;C:\\Python312\\;C:\\Program Files\\Eclipse &#x27;
+ &#x27;Adoptium\\jdk-21.0.5.11-hotspot\\bin;C:\\Program Files\\Common &#x27;
+ &#x27;Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program &#x27;
+ &#x27;Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA &#x27;
+ &#x27;Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\Program &#x27;
+ &#x27;Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin;C:\\Program &#x27;
+ &#x27;Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK &#x27;
+ &#x27;Utility;C:\\Program &#x27;
+ &#x27;Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program &#x27;
+ &#x27;Files\\Cloudflare\\Cloudflare WARP\\;C:\\Program Files\\Microsoft SQL &#x27;
+ &#x27;Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client &#x27;
+ &#x27;SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files &#x27;
+ &#x27;(x86)\\Windows Kits\\10\\Windows Performance &#x27;
+ &#x27;Toolkit\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\Admin\\AppData\\Local\\Microsoft\\WindowsApps;D:\\flag\\modelsim_ase\\win32aloem;D:\\modelsim\\modelsim_ase\\win32aloem;D:\\modelsim\\modelsim_ae\\win32aloem;D:\\mdsim\\modelsim_ase\\win32aloem;D:\\code\\Microsoft &#x27;
+ &#x27;VS &#x27;
+ &#x27;Code\\bin;C:\\msys64\\mingw64\\bin;C:\\Users\\Admin\\AppData\\Roaming\\npm;C:\\Users\\Admin\\.dotnet\\tools;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\bundled\\scripts\\noConfigScripts&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATHEXT</td>
+          <td class="code"><pre>&#x27;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/payment_return&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_ARCHITECTURE</td>
+          <td class="code"><pre>&#x27;AMD64&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_IDENTIFIER</td>
+          <td class="code"><pre>&#x27;Intel64 Family 6 Model 165 Stepping 3, GenuineIntel&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_LEVEL</td>
+          <td class="code"><pre>&#x27;6&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_REVISION</td>
+          <td class="code"><pre>&#x27;a503&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMDATA</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROMPT</td>
+          <td class="code"><pre>&#x27;$P$G&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PSMODULEPATH</td>
+          <td class="code"><pre>(&#x27;C:\\Users\\Admin\\Documents\\WindowsPowerShell\\Modules;C:\\Program &#x27;
+ &#x27;Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PUBLIC</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Public&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYDEVD_DISABLE_FILE_VALIDATION</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;127.0.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;kubernetes.docker.internal&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;5000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSIONNAME</td>
+          <td class="code"><pre>&#x27;Console&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STM32CUBEMX_PATH</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Programs\\STM32CubeMX&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STM32_PRG_PATH</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\STMicroelectronics\\STM32Cube\\STM32CubeProgrammer\\bin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMROOT</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMP</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Temp&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM</td>
+          <td class="code"><pre>&#x27;vscode&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM_VERSION</td>
+          <td class="code"><pre>&#x27;1.99.0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TMP</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin\\AppData\\Local\\Temp&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN_ROAMINGPROFILE</td>
+          <td class="code"><pre>&#x27;DESKTOP-JH2M2UC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERNAME</td>
+          <td class="code"><pre>&#x27;Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERPROFILE</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Admin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_DEBUGPY_ADAPTER_ENDPOINTS</td>
+          <td class="code"><pre>&#x27;c:\\Users\\Admin\\.vscode\\extensions\\ms-python.debugpy-2025.6.0-win32-x64\\.noConfigDebugAdapterEndpoints\\endpoint-25a950aad9ce70c6.txt&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_EXTRA_ARGS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_MAIN</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_NODE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_IPC_HANDLE</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\vscode-git-dfaaeaaecb-sock&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_INJECTION</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WINDIR</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x000001F69E6B7DD0&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>vnpay_ev.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th>Setting</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;*&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>[&#x27;django.contrib.auth.backends.ModelBackend&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;auth.User&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>WindowsPath(&#x27;C:/Users/Admin/Desktop/QT_RESOURCES/New folder (9)/vnpay_ev&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.sqlite3&#x27;,
+             &#x27;HOST&#x27;: &#x27;&#x27;,
+             &#x27;NAME&#x27;: WindowsPath(&#x27;C:/Users/Admin/Desktop/QT_RESOURCES/New folder (9)/vnpay_ev/db.sqlite3&#x27;),
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.AutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FILE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.core.files.storage.FileSystemStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_HASHING_ALGORITHM</td>
+          <td class="code"><pre>&#x27;sha256&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;evcharge&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian BokmÃ¥l&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;fa&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;vnpay_ev.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_BROWSER_XSS_FILTER</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;vnpay_ev.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>&#x27;/static/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[{&#x27;APP_DIRS&#x27;: True,
+  &#x27;BACKEND&#x27;: &#x27;django.template.backends.django.DjangoTemplates&#x27;,
+  &#x27;DIRS&#x27;: [&#x27;C:\\Users\\Admin\\Desktop\\QT_RESOURCES\\New folder &#x27;
+           &#x27;(9)\\vnpay_ev\\evcharge\\templates&#x27;],
+  &#x27;OPTIONS&#x27;: {&#x27;context_processors&#x27;: [&#x27;django.template.context_processors.debug&#x27;,
+                                     &#x27;django.template.context_processors.request&#x27;,
+                                     &#x27;django.contrib.auth.context_processors.auth&#x27;,
+                                     &#x27;django.contrib.messages.context_processors.messages&#x27;]}}]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;Asia/Ho_Chi_Minh&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_L10N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_API_URL</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_HASH_SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_PAYMENT_URL</td>
+          <td class="code"><pre>&#x27;https://sandbox.vnpayment.vn/paymentv2/vpcpay.html&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_RETURN_URL</td>
+          <td class="code"><pre>&#x27;http://127.0.0.1:5000/payment_return&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VNPAY_TMN_CODE</td>
+          <td class="code"><pre>&#x27;1O1EZ0CY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;vnpay_ev.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+  <div id="explanation">
+    <p>
+      Youâ\x80\x99re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </div>
+
+</body>
+</html>
+
+2025-04-06 21:47:46 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 21:48:00 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 5000 VN\u0110
+2025-04-06 21:48:00 [WARNING] Forbidden (CSRF cookie not set.): /payment_return/
+2025-04-06 21:48:00 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 403 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>403 Forbidden</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    #info { background:#f6f6f6; }
+    #info ul { margin: 0.5em 4em; }
+    #info p, #summary p { padding-top:10px; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+<div id="summary">
+  <h1>Forbidden <span>(403)</span></h1>
+  <p>CSRF verification failed. Request aborted.</p>
+
+
+  <p>You are seeing this message because this site requires a CSRF cookie when submitting forms. This cookie is required for security reasons, to ensure that your browser is not being hijacked by third parties.</p>
+  <p>If you have configured your browser to disable cookies, please re-enable them, at least for this site, or for â\x80\x9csame-originâ\x80\x9d requests.</p>
+
+</div>
+
+<div id="info">
+  <h2>Help</h2>
+    
+    <p>Reason given for failure:</p>
+    <pre>
+    CSRF cookie not set.
+    </pre>
+    
+
+  <p>In general, this can occur when there is a genuine Cross Site Request Forgery, or when
+  <a
+  href="https://docs.djangoproject.com/en/3.2/ref/csrf/">Djangoâ\x80\x99s
+  CSRF mechanism</a> has not been used correctly.  For POST forms, you need to
+  ensure:</p>
+
+  <ul>
+    <li>Your browser is accepting cookies.</li>
+
+    <li>The view function passes a <code>request</code> to the templateâ\x80\x99s <a
+    href="https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render"><code>render</code></a>
+    method.</li>
+
+    <li>In the template, there is a <code>{% csrf_token
+    %}</code> template tag inside each POST form that
+    targets an internal URL.</li>
+
+    <li>If you are not using <code>CsrfViewMiddleware</code>, then you must use
+    <code>csrf_protect</code> on any views that use the <code>csrf_token</code>
+    template tag, as well as those that accept the POST data.</li>
+
+    <li>The form has a valid CSRF token. After logging in in another browser
+    tab or hitting the back button after a login, you may need to reload the
+    page with the form, because the token is rotated after a login.</li>
+  </ul>
+
+  <p>Youâ\x80\x99re seeing the help section of this page because you have <code>DEBUG =
+  True</code> in your Django settings file. Change that to <code>False</code>,
+  and only the initial error message will be displayed.  </p>
+
+  <p>You can customize this page using the CSRF_FAILURE_VIEW setting.</p>
+</div>
+
+</body>
+</html>
+
+2025-04-06 21:48:08 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 21:48:17 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 5000 VN\u0110
+2025-04-06 21:48:17 [WARNING] Forbidden (CSRF cookie not set.): /payment_return/
+2025-04-06 21:48:17 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 403 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>403 Forbidden</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    #info { background:#f6f6f6; }
+    #info ul { margin: 0.5em 4em; }
+    #info p, #summary p { padding-top:10px; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+<div id="summary">
+  <h1>Forbidden <span>(403)</span></h1>
+  <p>CSRF verification failed. Request aborted.</p>
+
+
+  <p>You are seeing this message because this site requires a CSRF cookie when submitting forms. This cookie is required for security reasons, to ensure that your browser is not being hijacked by third parties.</p>
+  <p>If you have configured your browser to disable cookies, please re-enable them, at least for this site, or for â\x80\x9csame-originâ\x80\x9d requests.</p>
+
+</div>
+
+<div id="info">
+  <h2>Help</h2>
+    
+    <p>Reason given for failure:</p>
+    <pre>
+    CSRF cookie not set.
+    </pre>
+    
+
+  <p>In general, this can occur when there is a genuine Cross Site Request Forgery, or when
+  <a
+  href="https://docs.djangoproject.com/en/3.2/ref/csrf/">Djangoâ\x80\x99s
+  CSRF mechanism</a> has not been used correctly.  For POST forms, you need to
+  ensure:</p>
+
+  <ul>
+    <li>Your browser is accepting cookies.</li>
+
+    <li>The view function passes a <code>request</code> to the templateâ\x80\x99s <a
+    href="https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render"><code>render</code></a>
+    method.</li>
+
+    <li>In the template, there is a <code>{% csrf_token
+    %}</code> template tag inside each POST form that
+    targets an internal URL.</li>
+
+    <li>If you are not using <code>CsrfViewMiddleware</code>, then you must use
+    <code>csrf_protect</code> on any views that use the <code>csrf_token</code>
+    template tag, as well as those that accept the POST data.</li>
+
+    <li>The form has a valid CSRF token. After logging in in another browser
+    tab or hitting the back button after a login, you may need to reload the
+    page with the form, because the token is rotated after a login.</li>
+  </ul>
+
+  <p>Youâ\x80\x99re seeing the help section of this page because you have <code>DEBUG =
+  True</code> in your Django settings file. Change that to <code>False</code>,
+  and only the initial error message will be displayed.  </p>
+
+  <p>You can customize this page using the CSRF_FAILURE_VIEW setting.</p>
+</div>
+
+</body>
+</html>
+
+2025-04-06 21:49:00 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 21:49:15 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 5000 VN\u0110
+2025-04-06 21:49:15 [WARNING] Forbidden (CSRF cookie not set.): /payment_return/
+2025-04-06 21:49:15 [ERROR] L\u1ed7i t\u1ea1o thanh toán: 403 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>403 Forbidden</title>
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    #info { background:#f6f6f6; }
+    #info ul { margin: 0.5em 4em; }
+    #info p, #summary p { padding-top:10px; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+<div id="summary">
+  <h1>Forbidden <span>(403)</span></h1>
+  <p>CSRF verification failed. Request aborted.</p>
+
+
+  <p>You are seeing this message because this site requires a CSRF cookie when submitting forms. This cookie is required for security reasons, to ensure that your browser is not being hijacked by third parties.</p>
+  <p>If you have configured your browser to disable cookies, please re-enable them, at least for this site, or for â\x80\x9csame-originâ\x80\x9d requests.</p>
+
+</div>
+
+<div id="info">
+  <h2>Help</h2>
+    
+    <p>Reason given for failure:</p>
+    <pre>
+    CSRF cookie not set.
+    </pre>
+    
+
+  <p>In general, this can occur when there is a genuine Cross Site Request Forgery, or when
+  <a
+  href="https://docs.djangoproject.com/en/3.2/ref/csrf/">Djangoâ\x80\x99s
+  CSRF mechanism</a> has not been used correctly.  For POST forms, you need to
+  ensure:</p>
+
+  <ul>
+    <li>Your browser is accepting cookies.</li>
+
+    <li>The view function passes a <code>request</code> to the templateâ\x80\x99s <a
+    href="https://docs.djangoproject.com/en/dev/topics/templates/#django.template.backends.base.Template.render"><code>render</code></a>
+    method.</li>
+
+    <li>In the template, there is a <code>{% csrf_token
+    %}</code> template tag inside each POST form that
+    targets an internal URL.</li>
+
+    <li>If you are not using <code>CsrfViewMiddleware</code>, then you must use
+    <code>csrf_protect</code> on any views that use the <code>csrf_token</code>
+    template tag, as well as those that accept the POST data.</li>
+
+    <li>The form has a valid CSRF token. After logging in in another browser
+    tab or hitting the back button after a login, you may need to reload the
+    page with the form, because the token is rotated after a login.</li>
+  </ul>
+
+  <p>Youâ\x80\x99re seeing the help section of this page because you have <code>DEBUG =
+  True</code> in your Django settings file. Change that to <code>False</code>,
+  and only the initial error message will be displayed.  </p>
+
+  <p>You can customize this page using the CSRF_FAILURE_VIEW setting.</p>
+</div>
+
+</body>
+</html>
+
+2025-04-06 21:50:36 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 21:50:45 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50000 VN\u0110
+2025-04-06 21:50:45 [ERROR] \u26a0\ufe0f Sai checksum t\u1eeb VNPAY callback. Giao d\u1ecbch không h\u1ee3p l\u1ec7!
+2025-04-06 21:50:45 [ERROR] L\u1ed7i khi t\u1ea1o QR thanh toán: Expecting value: line 1 column 1 (char 0)
+2025-04-06 21:52:13 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406215213&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F127.0.0.1%3A5000%2Fpayment_return&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406215213&vnp_Version=2.1.0&vnp_SecureHash=229993b259ee23b30e5625e213194a15c0d5dc5dd24bc5321d9d67c5f987e5a8ad0978bfb5eb4fa815a08448c78d0ac47f78b4a984a361b075a64c4edfb799d0
+2025-04-06 21:52:45 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406215245&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F127.0.0.1%3A5000%2Fpayment_return&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406215245&vnp_Version=2.1.0&vnp_SecureHash=c4bafae2d0a9deb48a77817eebbf273a4c21aa17ee094905630e8cc6172a990c257fac21abd245913b68f5d82fbb8af22a771c1eee436ef6bfab87d282f6ed67
+2025-04-06 21:57:04 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 21:57:13 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 5000 VN\u0110
+2025-04-06 21:57:13 [ERROR] \u26a0\ufe0f Sai checksum t\u1eeb VNPAY callback. Giao d\u1ecbch không h\u1ee3p l\u1ec7!
+2025-04-06 21:57:13 [ERROR] L\u1ed7i khi t\u1ea1o QR thanh toán: Expecting value: line 1 column 1 (char 0)
+2025-04-06 21:57:41 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 21:57:51 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 21:58:01 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406215801&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F127.0.0.1%3A5000%2Fpayment_return&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406215801&vnp_Version=2.1.0&vnp_SecureHash=3ba0d322a761f66d18938e9f88efc0acfdc3ad322990cf6700dae544132b24c00f807792136c8e4f5addf92952f499c32bd62f84c0ce65ebb0962b3b0b890bc4
+2025-04-06 21:58:27 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 21:58:34 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406215834&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F127.0.0.1%3A5000%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406215834&vnp_Version=2.1.0&vnp_SecureHash=c5f3d3f563d406352c1f06a19ac43f8a34d64751f902d703d744afc44d59dda4f680cd1694fafd0ed6f751f9016b1fec0c74cc351a251bc55635dabdc96970fc
+2025-04-06 21:59:42 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 22:00:10 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 22:00:19 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 22:00:25 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 22:00:35 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406220035&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=http%3A%2F%2F127.0.0.1%3A5000%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220035&vnp_Version=2.1.0&vnp_SecureHash=a08e712799a9e58abdb7ff7a45278486f68700abbeead020b22fc386ed195110791c9f2ca6f26cdd02d475daa6da6d5f0f3376a4554f38c055e4261bb9ad064b
+2025-04-06 22:00:47 [WARNING] Not Found: /payment_return/&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220035&vnp_Version=2.1.0
+2025-04-06 22:00:47 [WARNING] Not Found: /favicon.ico
+2025-04-06 22:02:35 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 22:03:00 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406220300&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220300&vnp_Version=2.1.0&vnp_SecureHash=5ef83bfe27d0541e06b17be27952f9c19cab472f8427bdb78171d2a89a858df7bf3ea12be7fb2f310003f83e83be8358faba2ed0ebe91c9c5a560ae07ca0c1cd
+2025-04-06 22:03:25 [WARNING] Not Found: /payment_return/&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220300&vnp_Version=2.1.0
+2025-04-06 22:03:25 [WARNING] Not Found: /favicon.ico
+2025-04-06 22:04:35 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\urls.py changed, reloading.
+2025-04-06 22:05:10 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:05:18 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:07:03 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406220703&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220703&vnp_Version=2.1.0&vnp_SecureHash=4bc1c097c2b4ce569aaf22a08d5eba9dea44b2f6cc9b61f16acb0f75bf5e63a082dfe0e41c4e84356f9e1747c190b84d71e60e5c550c92e3b0436058e81411bd
+2025-04-06 22:07:29 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406220729&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406220729&vnp_Version=2.1.0&vnp_SecureHash=d8e0cbb8a02d2baabf283a7d150708af533c50e6c8100ecf6465748fc2909f3e1577116110535773473c1c02d0042794c8f9d45e5a7ebbc1f4eb367f767fa0f6
+2025-04-06 22:12:07 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 22:12:21 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406221221&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406221221&vnp_Version=2.1.0&vnp_SecureHash=096657f1bde4442d1bea2ab1b08972319477d00c7b9a0f585f57a9bcfb21538c4db7a0d02b2764cc6e642a173e59a7621412c897fc5a3270979d3a3c40c89096
+2025-04-06 22:13:48 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406221348&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=S%E1%BA%A1c+xe+ch%E1%BA%BF+%C4%91%E1%BB%99+fast+-+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406221348&vnp_Version=2.1.0&vnp_SecureHash=7897e9bc99b37aadf50a4b425144a4e69e56e17c1e9d9c4f1b836edd35ae2793d86d035add882e8a92712f76e9eb4811649f10eb82e997763550a2e44907f6e4
+2025-04-06 22:15:07 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:15:18 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406221518&vnp_CurrCode=VND&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac+fast+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406221518&vnp_Version=2.1.0&vnp_SecureHash=1febb702b98d9373adbc65b3695cbdbe4ed51e57731551f0a9ccd75092de83175d963768efe932ce49ded652f619ffe5da881c97bab32d285b84d567cfafabaf
+2025-04-06 22:17:40 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:17:50 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406221750&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac+fast+50000+VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406221750&vnp_Version=2.1.0&vnp_SecureHash=778c1ae334a19336c54b49a2dc22ae76caa434018e3ffea409edb3b78d38b91b14aadae8c6bd8bb3e6911f2f1e13dfdadbdbe92d4f861cafd1a9d8735b202992
+2025-04-06 22:20:39 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 22:20:59 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:21:23 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406222123&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406222123&vnp_Version=2.1.0&vnp_SecureHash=5edb36bf66e1b526c2b0c25fd03369948e1c209bc070a5d52826f870849facaeddbf401fb69963c0c9d6c421a0690a71e58328eda436e4d2ba386a823d552b03
+2025-04-06 22:24:52 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:25:13 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406222513&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406222513&vnp_Version=2.1.0&vnp_SecureHash=5baad5109800226ec1925401660dbc023fa9dce254f4613889201e5267f9cbabf5673bcf1a5ab3d57015c38b1df20e2aa00a641c73b6c4100a6e165b65df6df8
+2025-04-06 22:25:32 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406222532&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406222532&vnp_Version=2.1.0&vnp_SecureHash=cf4afaf9967b451482771a6a3a1da08537eb85dad8f339a29d1905140068f0c175017dd3b0ddcd08bd6d94e958328daf16cc634a736778f6cc357b4a427f8016
+2025-04-06 22:27:01 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:27:05 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:27:08 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:27:25 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406222725&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406222725&vnp_Version=2.1.0&vnp_SecureHash=dcef39046d70272dd7398131f194821ccc903a8b04923c0ae210531fd454434b7bda20a90e74514337b0880e5c7b01ae13ffe0372fbe2f65c23eba8d9118a0b9
+2025-04-06 22:28:52 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:29:05 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:29:23 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:29:36 [ERROR] Internal Server Error: /create_payment/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py", line 37, in create_payment
+    expire_date = create_date + timedelta(minutes=15)
+                  ^^^^^^^^^^^
+NameError: name 'create_date' is not defined
+2025-04-06 22:30:04 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:30:22 [ERROR] Internal Server Error: /create_payment/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\Python\Python312\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py", line 38, in create_payment
+    expire_date = create_date + timedelta(minutes=15)
+                  ^^^^^^^^^^^
+NameError: name 'create_date' is not defined
+2025-04-06 22:31:19 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:31:23 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:31:31 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406223131&vnp_CurrCode=VND&vnp_ExpireDate=20250406224631&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406223131&vnp_Version=2.1.0&vnp_SecureHash=4c70432391005dac15fbe1a2916fe5c55fbec774cc1bfaee1fbfc9a0fa525f44f91f48f6d92e7fa4ef03bd45b15b1a534a2379ea123abd3529159fe087f682ca
+2025-04-06 22:31:47 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406223147&vnp_CurrCode=VND&vnp_ExpireDate=20250406224647&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406223147&vnp_Version=2.1.0&vnp_SecureHash=e2c056acfd2ff7af2db97ffb6389e8f5f8fc9c9e37bb2c96be521977f34a10a52e97c242074b0e6eef130255152e65f1df2c115262074e10a7ccdff976d38a76
+2025-04-06 22:32:47 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:32:58 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:33:04 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406223304&vnp_CurrCode=VND&vnp_ExpireDate=20250406224804&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406223304&vnp_Version=2.1.0&vnp_SecureHash=d161d97532bc85633e4be888ba783f72bf50403f872990622692f4e2d921180f27e0935eaeba1679f5ff1314fa97db406f6d1f8859464969fb5272e297d66de5
+2025-04-06 22:33:32 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:33:39 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406223339&vnp_CurrCode=VND&vnp_ExpireDate=20250406224839&vnp_IpAddr=192.168.1.10&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406223339&vnp_Version=2.1.0&vnp_SecureHash=2c7cf24de0b45686873877bfb3477e400ba0082de7a1dbe1e354c3fb69de9e30fd12a19f1b9b3f7c1f3970ad6dd6a024b9ea4940113ea45991c8b0f8ea83bee2
+2025-04-06 22:35:34 [INFO] B\u1eaft \u0111\u1ea7u giao d\u1ecbch | Ch\u1ebf \u0111\u1ed9: fast | S\u1ed1 ti\u1ec1n: 50500 VN\u0110
+2025-04-06 22:35:34 [ERROR] \u26a0\ufe0f Sai checksum t\u1eeb VNPAY callback. Giao d\u1ecbch không h\u1ee3p l\u1ec7!
+2025-04-06 22:35:34 [ERROR] L\u1ed7i khi t\u1ea1o QR thanh toán: Expecting value: line 1 column 1 (char 0)
+2025-04-06 22:36:17 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 22:37:46 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406223746&vnp_CurrCode=VND&vnp_ExpireDate=20250406225246&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406223746&vnp_Version=2.1.0&vnp_SecureHash=0fe48bb3e5cbf248efe34aac90c3ccc9f0cda96ef244252e0b27dab60672c0f4b40748f395ad3da640a6cf434e3890a5c7136c305e459ff5214ef3258413af57
+2025-04-06 22:43:13 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406224313&vnp_CurrCode=VND&vnp_ExpireDate=20250406225813&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406224313&vnp_Version=2.1.0&vnp_SecureHash=033348efa161a7d1da83ebadca960395d1c666fb5bae648a24013860a1e02475b851fbe0b417f5eabfabd9f25b02e78e36af3fa0c2513cbe8ab162f13bb6e58b
+2025-04-06 22:44:19 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406224419&vnp_CurrCode=VND&vnp_ExpireDate=20250406225919&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406224419&vnp_Version=2.1.0&vnp_SecureHash=fe53de8d0790a9d11f4c2983432cb8a31480c848c2e66975c57d3cbedfb0b2b298367c1deedf02c8474d5f7299859265be54a4f060103bc16e217209f46726a3
+2025-04-06 22:46:46 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 22:46:52 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 22:47:00 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406224700&vnp_CurrCode=VND&vnp_ExpireDate=20250406230200&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250406224700&vnp_Version=2.1.0&vnp_SecureHash=1fd003c364710c66ad4d981cd8fc8bec3f348be45fb67dfe9b186c482da7ca1482a713f1814ebf18e438e0577456d8d832b35236b3ac2bb0f744e7d80abe4d54
+2025-04-06 22:57:21 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406225721&vnp_CurrCode=VND&vnp_ExpireDate=20250406231221&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=13LG33SP&vnp_TxnRef=20250406225721&vnp_Version=2.1.0&vnp_SecureHash=bda3b31b4c0957ba4f7dff1f585283fe02572c620e793476b87297346df7aba119d0808cd547c3a3c1933e3ae7503b5c5160b3a1245abadce2dae7edece9eaae
+2025-04-06 22:58:55 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 22:59:01 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\vnpay_ev\settings.py changed, reloading.
+2025-04-06 23:00:58 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406230058&vnp_CurrCode=VND&vnp_ExpireDate=20250406231558&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406230058&vnp_Version=2.1.0&vnp_SecureHash=4f4741a6039c74ec9490009a0a5a251df4b6d46374132b4c332787ec5248fab91fd3c28b2de52f12c3579e7a939b10729a37de9f984c8c2d0d06fe093b6a33c1
+2025-04-06 23:02:57 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 23:03:27 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406230327&vnp_CurrCode=VND&vnp_ExpireDate=20250406231827&vnp_IpAddr=127.0.0.1&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406230327&vnp_Version=2.1.0&vnp_SecureHash=dfa353efd14300afefffd190b0c8074e360edb7548bd641ee3960d30114e19819eeca0caffbd49ea2981d8b448f836ad95c3977ffb41d8b822159f974d31c0b4
+2025-04-06 23:05:59 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:06:19 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:06:49 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:07:06 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:07:10 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:07:17 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406230717&vnp_CurrCode=VND&vnp_ExpireDate=20250406232217&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406230717&vnp_Version=2.1.0&vnp_SecureHash=741fc884b54dd85bd5e13b203bb481285baf180faff1bd88b1d53bd9cd8297a67a64aec39cacc60c247ea7cec8c79ac61bcf5b68bc858ec6b2278aff04ecf773
+2025-04-06 23:07:38 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:07:46 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406230746&vnp_CurrCode=VND&vnp_ExpireDate=20250406232246&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406230746&vnp_Version=2.1.0&vnp_SecureHash=4b32a5a53e511d33d0fa5da340c82a265dadc252839c51627da17ff5882a58556627f0196e0085823af487817cfe6c3223be306142a592f6ccee075a49d7eb69
+2025-04-06 23:07:59 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:08:49 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:08:56 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406230856&vnp_CurrCode=VND&vnp_ExpireDate=20250406232356&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406230856&vnp_Version=2.1.0&vnp_SecureHash=d84d8f1637c7222a175661cad7faad0c1ee04ff27c3273b17d8ff269f6237505da0036138e7e397eef39fd1485767d66836b1221fc08357eb1c9a9a22bc30e3b
+2025-04-06 23:11:37 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:11:41 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406231141&vnp_CurrCode=VND&vnp_ExpireDate=20250406232641&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406231141&vnp_Version=2.1.0&vnp_SecureHash=abec8471b1335dabcd3a95e71af88ea27149ff1b4078e59e637a57d5f102f4759b81b1ce9b17f1d59c09ba39cf066916a7efb494c9fb30f731014b05d9d5bf44
+2025-04-06 23:11:47 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406231147&vnp_CurrCode=VND&vnp_ExpireDate=20250406232647&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406231147&vnp_Version=2.1.0&vnp_SecureHash=42cb4f6a52b0849b1b21a67aedebcbe593284971028700b72f0d2c562661a107724f4611752882edfb0b6d71f517be6deb921ad8c35eba686de97b2c2ffa90dc
+2025-04-06 23:16:07 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406231607&vnp_CurrCode=VND&vnp_ExpireDate=20250406233107&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406231607&vnp_Version=2.1.0&vnp_SecureHash=245d5004964139c325cab445eef9aea7ae999d74922aac7523ca1ecd3c2d5d3eb98e600cdaf271464beda459d49347e9f430d098f527654576e175f135371c03
+2025-04-06 23:17:01 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:17:08 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406231708&vnp_CurrCode=VND&vnp_ExpireDate=20250406233208&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406231708&vnp_Version=2.1.0&vnp_SecureHash=04f6c7bca55fd0076e567d675ac12aebc816f175b03a0aa466318d588b75f4aef75f2480ec89e04decf6e1036bce5f0be106567f465afc9877f88594681e0a84
+2025-04-06 23:19:22 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406231922&vnp_CurrCode=VND&vnp_ExpireDate=20250406233422&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=other&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406231922&vnp_Version=2.1.0&vnp_SecureHash=212f0a4eef38c56589cf8197da2708f94fe460d85111a396290c2544d7bf2082798d3ed19f853a32b0d2d452e8c312360dd2174cb2c1a98927a2416492060ecd
+2025-04-06 23:20:00 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:20:45 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:21:15 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406232115&vnp_CurrCode=VND&vnp_ExpireDate=20250406233615&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406232115&vnp_Version=2.1.0&vnp_SecureHash=3a77e6c16805e39c0a96cec9973f8e672cc5b91d7d51a352c383a961228b750c7571aef7dc76a5152d917c2f09097c76539ef48b338435054fbb1a66b2dfac36
+2025-04-06 23:21:53 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:23:08 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 23:23:59 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406232359&vnp_CurrCode=VND&vnp_ExpireDate=20250406233859&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406232359&vnp_Version=2.1.0&vnp_SecureHash=e6bc135aa38f87afc7dc71d902640c80b8717e23776bc70bb54c25855c3ef7dc2d616ce34b0a375a9f8f7abf59567838f73aef991c5b0c646fc80e41c3e57c93
+2025-04-06 23:25:28 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 23:25:34 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\vnpay.py changed, reloading.
+2025-04-06 23:25:45 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406232545&vnp_CurrCode=VND&vnp_ExpireDate=20250406234045&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=billpayment&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406232545&vnp_Version=2.1.0&vnp_SecureHash=4e6ece8bfb8fb001683db20582d70e2a00a5d960361fc60ce6d0818e2423e48480e280cb3958d15fc5c25c0634ca42fb5818c04174082326d20efc1e0df4f6d4
+2025-04-06 23:27:15 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.
+2025-04-06 23:27:20 [INFO] \U0001f517 T\u1ea1o URL thanh toán: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=5000000&vnp_Command=pay&vnp_CreateDate=20250406232720&vnp_CurrCode=VND&vnp_ExpireDate=20250406234220&vnp_IpAddr=171.225.184.76&vnp_Locale=vn&vnp_OrderInfo=sac_fast_50000_VND&vnp_OrderType=topup&vnp_ReturnURL=https%3A%2F%2F1395-171-225-184-76.ngrok-free.app%2Fpayment_return%2F&vnp_TmnCode=1O1EZ0CY&vnp_TxnRef=20250406232720&vnp_Version=2.1.0&vnp_SecureHash=ae10a7f0522afb2d680e46e4e3a980b33c3805228dfe47755acc8b690aa0e953ba7780e8474691fd03ef5b681761691c23634d6988f1463162680152a50f226e
+2025-04-06 23:31:29 [INFO] C:\Users\Admin\Desktop\QT_RESOURCES\New folder (9)\vnpay_ev\evcharge\views.py changed, reloading.

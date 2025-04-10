@@ -48,7 +48,7 @@ def enter_amount():
 
 # 3. Gửi request tạo URL thanh toán
 def create_vnpay_qr(mode, amount):
-    SERVER_URL = "http://192.168.101.12:8081/create_payment/"
+    SERVER_URL = "http://127.0.0.1:5000/payment_return/"
     data = {
         'mode': mode,
         'amount': amount
